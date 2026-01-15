@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harmony Test</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    #log { margin-top: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px; min-height: 200px; font-family: monospace; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>🎧 Harmony Test</h1>
+  <button onclick="testActivation()">Test Activation (Ctrl+Shift+H)</button>
+  <button onclick="clearLog()">Clear Log</button>
+  <div id="log">Loading extension...</div>
+
+  <script>
+    function log(msg) {
+      const logEl = document.getElementById('log');
+      logEl.innerHTML += new Date().toLocaleTimeString() + ' > ' + msg + '\n';
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    function clearLog() {
+      document.getElementById('log').innerHTML = '';
+    }
+
+    // Check if extension is loaded
+    if (document.currentScript.getAttribute('src') === null) {
+      log('✅ Test page loaded\n');
+      log('Try pressing Ctrl+Shift+H\n');
+      log('Open DevTools (F12) → Console to see extension logs');
+    }
+
+    function testActivation() {
+      log('Test button clicked - you should see popup in bottom right');
+    }
+  </script>
+</body>
+</html>
