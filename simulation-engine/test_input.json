@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "intent": "pay_credit_card",
+        "horizon_months": 12
+    },
+    "state": {
+        "current_balance": 5000,
+        "date": "2024-01-01"
+    },
+    "obligations": {
+        "credit_card": {
+            "outstanding": 2000,
+            "credit_limit": 10000,
+            "apr": 20,
+            "min_due": 100,
+            "interest_accrued": 0,
+            "due_date": "2024-01-15"
+        },
+        "emis": [
+            {
+                "monthly_emi": 500,
+                "remaining_months": 10,
+                "interest_rate": 10,
+                "miss_penalty": 50,
+                "prepay_allowed": true
+            }
+        ],
+        "emergency": null
+    },
+    "user_action": {
+        "type": "credit_card_payment",
+        "amount": null
+    },
+    "constraints": {
+        "min_cash_buffer": 1000,
+        "max_credit_utilization": 30
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "intent": "handle_emergency",
+        "horizon_months": 6
+    },
+    "state": {
+        "current_balance": 2000,
+        "date": "2024-01-01"
+    },
+    "obligations": {
+        "credit_card": {
+            "outstanding": 500,
+            "credit_limit": 5000,
+            "apr": 20,
+            "min_due": 50,
+            "interest_accrued": 0,
+            "due_date": "2024-01-15"
+        },
+        "emis": [],
+        "emergency": {
+            "amount": 1500,
+            "time_window_days": 1,
+            "financing_allowed": [
+                "cash",
+                "credit",
+                "split"
+            ]
+        }
+    },
+    "user_action": {
+        "type": "emergency_payment",
+        "amount": null
+    },
+    "constraints": {
+        "min_cash_buffer": 500,
+        "max_credit_utilization": 50
+    }
+}

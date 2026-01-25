@@ -1,0 +1,17 @@
+{
+    "name": "financial-simulation-engine",
+    "version": "1.0.0",
+    "description": "Deterministic financial simulation engine",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "date-fns": "^3.0.0"
+    }
+}
