@@ -1,4 +1,4 @@
-HARMONY
+#HARMONY
 
 HARMONY is a personal financial enforcement layer that sits between user intent and execution.
 It prevents bad financial decisions by simulating future commitments and enforcing user-defined constraints before any action proceeds.
