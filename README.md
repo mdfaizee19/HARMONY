@@ -1,6 +1,6 @@
 # HARMONY
 
-<img width="1402" height="1122" alt="a857b98b-742d-4277-b346-9c20a7fa1a9d" src="https://github.com/user-attachments/assets/35edafe4-65ad-4056-9630-17c8da5865a4" />
+<img width="391" height="130" alt="image" src="https://github.com/user-attachments/assets/f400bef2-3013-4a1a-b9d1-db3900abdad4" />
 
 
 **HARMONY is a personal financial enforcement layer that sits between user intent and execution.**  
